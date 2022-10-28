@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "target": "ESNext",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmitOnError": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "noEmit": false,
+
+    "outDir": "dist",
+    "strict": true,
+    "noUnusedLocals": true
+  },
+  "include": ["index.ts", "src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

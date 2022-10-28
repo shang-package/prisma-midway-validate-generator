@@ -1,0 +1,31 @@
+{
+  "name": "@s4p/prisma-midway-validate-generator",
+  "version": "0.0.1",
+  "description": "",
+  "bin": {
+    "prisma-midway-validate-generator": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run clean && tsc --declaration -w --incremental",
+    "build": "tsc --declaration && cp ./package.json ./dist/",
+    "clean": "rimraf -rf ./dist",
+    "lint:tsc": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^4.5.0",
+    "@prisma/generator-helper": "^4.5.0",
+    "@prisma/internals": "^4.5.0",
+    "fs-extra": "^10.1.0",
+    "prettier": "^2.7.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.8.4"
+  }
+}
